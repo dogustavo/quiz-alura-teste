@@ -3,6 +3,7 @@ import db from '../db.json';
 
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
+import QuizLogo from '../src/components/QuizLogo';
 import GitHubCorner from '../src/components/GitHubCorner';
 
 const BackgroundImage = styled.div`
@@ -27,6 +28,7 @@ const Home = () => {
     return (
         <BackgroundImage>
             <QuizContainer>
+                <QuizLogo />
                 <Widget>
                     <Widget.Header>
                         <h1>{db.title}</h1>
@@ -35,7 +37,6 @@ const Home = () => {
                         <p>{db.description}</p>
                     </Widget.Content>
                 </Widget>
-
                 <Widget>
                     <Widget.Content>
                         <h1>Quizes da Galera</h1>
